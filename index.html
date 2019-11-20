@@ -93,7 +93,7 @@ setTimeout(function(){
         </div>
         <div style="width: 100%; height: calc(100% - 15px); text-align: center; display: inline-block;">
             <br/>
-            <div data-netdata="system.cpu"
+<!--             <div data-netdata="system.cpu"
                     data-host="https://netdata-ismaya.member.design"
                     data-title="CPU usage of ISMAYA Server"
                     data-chart-library="dygraph"
@@ -101,8 +101,20 @@ setTimeout(function(){
                     data-height="100%"
                     data-after="-300"
                     data-dygraph-valuerange="[0, 100]"
-                    ></div>
-            <div data-netdata="system.cpu"
+                    ></div> -->
+                <div data-netdata="system.cpu"
+                        data-host="https://netdata-ismaya.member.design"
+                        data-dimensions="in"
+                        data-common-max="netdata-net-in"
+                        data-decimal-digits="0"
+                        data-title="CPU Usage"
+                        data-chart-library="easypiechart"
+                        data-width="15%"
+                        data-height="100%"
+                        data-after="-300"
+                        data-points="300"
+                        ></div>
+<!--             <div data-netdata="system.cpu"
                     data-host="https://api-netdata.madoo.io"
                     data-title="CPU usage of Madoo API"
                     data-chart-library="dygraph"
@@ -110,7 +122,19 @@ setTimeout(function(){
                     data-height="100%"
                     data-after="-300"
                     data-dygraph-valuerange="[0, 100]"
-                    ></div>
+                    ></div> -->
+                <div data-netdata="system.cpu"
+                        data-host="https://api-netdata.madoo.io"
+                        data-dimensions="in"
+                        data-common-max="netdata-net-in"
+                        data-decimal-digits="0"
+                        data-title="CPU Usage"
+                        data-chart-library="easypiechart"
+                        data-width="15%"
+                        data-height="100%"
+                        data-after="-300"
+                        data-points="300"
+                        ></div>
         </div>
 <!-- ISMAYA -->
         <div style="width: 100%; height: calc(100% - 15px); text-align: center; display: inline-block;">
@@ -202,7 +226,7 @@ setTimeout(function(){
             <div style="width: 49%; height:100%; align: center; display: inline-block;">
                 ISMAYA Server
                 <br/>
-                <div data-netdata="system.cpu"
+                <div data-netdata="netdata.requests"
                         data-host="https://netdata-ismaya.member.design"
                         data-common-max="netdata-requests"
                         data-decimal-digits="0"
