@@ -89,8 +89,30 @@ setTimeout(function(){
 
     <div style="width: 100%; height: 24vh; text-align: center; display: inline-block;">
         <div style="width: 100%; height: 15px; text-align: center; display: inline-block;">
-            <b>CPU On both servers</b>
+            <b>CPU USAGE</b>
         </div>
+        <div style="width: 100%; height: calc(100% - 15px); text-align: center; display: inline-block;">
+            <br/>
+            <div data-netdata="system.cpu"
+                    data-host="https://netdata-ismaya.loyalhackers.id"
+                    data-title="CPU usage of ISMAYA Server"
+                    data-chart-library="dygraph"
+                    data-width="49%"
+                    data-height="100%"
+                    data-after="-300"
+                    data-dygraph-valuerange="[0, 100]"
+                    ></div>
+            <div data-netdata="system.cpu"
+                    data-host="https://api-netdata.madoo.io"
+                    data-title="CPU usage of Madoo API"
+                    data-chart-library="dygraph"
+                    data-width="49%"
+                    data-height="100%"
+                    data-after="-300"
+                    data-dygraph-valuerange="[0, 100]"
+                    ></div>
+        </div>
+<!-- ISMAYA -->
         <div style="width: 100%; height: calc(100% - 15px); text-align: center; display: inline-block;">
             <br/>
             <div data-netdata="system.cpu"
@@ -103,8 +125,8 @@ setTimeout(function(){
                     data-dygraph-valuerange="[0, 100]"
                     ></div>
             <div data-netdata="system.cpu"
-                    data-host="https://api-netdata.madoo.io"
-                    data-title="CPU usage of Madoo API"
+                    data-host="https://cms-netdata.madoo.io"
+                    data-title="CPU usage of Madoo CMS"
                     data-chart-library="dygraph"
                     data-width="49%"
                     data-height="100%"
