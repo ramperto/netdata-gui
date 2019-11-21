@@ -103,7 +103,7 @@ setTimeout(function(){
                     data-after="-300"
                     data-points="300"
                     ></div>
-            <div data-netdata="system.cpu"
+    <!--         <div data-netdata="system.cpu"
                     data-host="https://api-netdata.madoo.io"
                     data-title="API Madoo CPU Usage/s"
                     data-decimal-digits="0"
@@ -112,6 +112,21 @@ setTimeout(function(){
                     data-height="100%"
                     data-after="-300"
                     data-points="300"
+                    ></div> -->
+            <div data-netdata="system.ram"
+                    data-dimensions="used|buffers|active|wired"
+                    data-append-options="percentage"
+                    data-common-max="netdata-net-in"
+                    data-decimal-digits="0"
+                    data-host="https://netdata-ismaya.member.design"
+                    data-title="Ismaya App Used RAM"
+                    data-units="%"
+                    data-easypiechart-max-value="100"
+                    data-chart-library="easypiechart"
+                    data-width="15%"
+                    data-height="100%"
+                    data-after="-360"
+                    data-points="360"
                     ></div>
         </div>
 <!-- coba coba -->
