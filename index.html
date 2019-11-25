@@ -104,23 +104,6 @@ setTimeout(function(){
                     data-points="300"
                     ></div>
 
-            <div data-netdata="system.net"
-                    data-host="https://netdata-ismaya.member.design"
-                    data-common-max="traffic"
-                    data-common-min="traffic"
-                    data-title="Network traffic on ISMAYA Server"
-                    data-chart-library="dygraph"
-                    data-width="30%"
-                    data-height="100%"
-                    data-after="-300"
-                    ></div>
-
-            
-        </div>
-<!-- coba coba -->
-        <div style="width: 100%; height: calc(100% - 15px); text-align: center; display: inline-block;">
-            <br/>
-
             <div data-netdata="system.ram"
                     data-dimensions="used|buffers|active|wired"
                     data-append-options="percentage"
@@ -136,13 +119,81 @@ setTimeout(function(){
                     data-after="-360"
                     data-points="360"
                     ></div>
+
+            <div data-netdata="system.net"
+                    data-host="https://netdata-ismaya.member.design"
+                    data-common-max="traffic"
+                    data-common-min="traffic"
+                    data-title="Network traffic on ISMAYA Server"
+                    data-chart-library="dygraph"
+                    data-width="40%"
+                    data-height="100%"
+                    data-after="-300"
+                    ></div>
+
             <div data-netdata="system.io"
                     data-host="https://netdata-ismaya.member.design"
                     data-common-max="io"
                     data-common-min="io"
                     data-title="I/O on ISMAYA Server"
                     data-chart-library="dygraph"
-                    data-width="30%"
+                    data-width="40%"
+                    data-height="100%"
+                    data-after="-300"
+                    ></div>
+
+<!-- netdata-ismayadb.member.id -->
+            
+        </div>
+<!-- coba coba -->
+        <div style="width: 100%; height: calc(100% - 15px); text-align: center; display: inline-block;">
+            <br/>
+
+            <div data-netdata="system.cpu"
+                    data-host="https://netdata-ismayadb.member.id"
+                    data-title="Ismaya DB CPU Usage/s"
+                    data-decimal-digits="0"
+                    data-chart-library="gauge"
+                    data-width="15%"
+                    data-height="100%"
+                    data-after="-300"
+                    data-points="300"
+                    ></div>
+
+            <div data-netdata="system.ram"
+                    data-dimensions="used|buffers|active|wired"
+                    data-append-options="percentage"
+                    data-common-max="netdata-net-in"
+                    data-decimal-digits="0"
+                    data-host="https://netdata-ismayadb.member.id"
+                    data-title="Ismaya DB Used RAM"
+                    data-units="%"
+                    data-easypiechart-max-value="100"
+                    data-chart-library="easypiechart"
+                    data-width="10%"
+                    data-height="100%"
+                    data-after="-360"
+                    data-points="360"
+                    ></div>
+
+            <div data-netdata="system.net"
+                    data-host="https://netdata-ismayadb.member.id"
+                    data-common-max="traffic"
+                    data-common-min="traffic"
+                    data-title="Network traffic on ISMAYA DB Server"
+                    data-chart-library="dygraph"
+                    data-width="40%"
+                    data-height="100%"
+                    data-after="-300"
+                    ></div>
+
+            <div data-netdata="system.io"
+                    data-host="https://netdata-ismayadb.member.id"
+                    data-common-max="io"
+                    data-common-min="io"
+                    data-title="I/O on ISMAYA DB Server"
+                    data-chart-library="dygraph"
+                    data-width="40%"
                     data-height="100%"
                     data-after="-300"
                     ></div>
