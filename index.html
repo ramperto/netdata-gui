@@ -311,6 +311,123 @@ setTimeout(function(){
                     ></div>        
         </div> 
     </div>
+
+<!-- START UNION CMS -->
+    <div style="width: 100%; height: 23vh; text-align: center; display: inline-block;">
+        <div style="width: 100%; height: 15px; text-align: center; display: inline-block;">
+            <b>FORE COFFEE <a href="https://fore-monitor.member.design">link here</a></b>
+        </div>
+        <div style="width: 100%; height: calc(100% - 15px); text-align: center; display: inline-block;">
+            <div data-netdata="system.cpu"
+                    data-host="https://fore-monitor.member.design"
+                    data-title="FORE APP CPU Usage/s"
+                    data-decimal-digits="0"
+                    data-chart-library="gauge"
+                    data-width="15%"
+                    data-height="100%"
+                    data-after="-300"
+                    data-points="300"
+                    ></div>
+
+            <div data-netdata="system.ram"
+                    data-dimensions="used|buffers|active|wired"
+                    data-append-options="percentage"
+                    data-common-max="netdata-net-in"
+                    data-decimal-digits="0"
+                    data-host="https://fore-monitor.member.design"
+                    data-title="FORE App Used RAM"
+                    data-units="%"
+                    data-easypiechart-max-value="100"
+                    data-chart-library="easypiechart"
+                    data-width="10%"
+                    data-height="100%"
+                    data-after="-360"
+                    data-points="360"
+                    ></div>
+
+            <div data-netdata="system.net"
+                    data-host="https://fore-monitor.member.design"
+                    data-common-max="traffic"
+                    data-common-min="traffic"
+                    data-title="Network traffic on FORE App Server"
+                    data-chart-library="dygraph"
+                    data-width="30%"
+                    data-height="100%"
+                    data-after="-300"
+                    ></div>
+
+            <div data-netdata="system.io"
+                    data-host="https://fore-monitor.member.design"
+                    data-common-max="io"
+                    data-common-min="io"
+                    data-title="I/O on FORE App Server"
+                    data-chart-library="dygraph"
+                    data-width="30%"
+                    data-height="100%"
+                    data-after="-300"
+                    ></div>
+
+<!-- netdata-ismayadb.member.id -->
+            
+        </div>
+<!-- coba coba -->
+        <div style="width: 100%; height: calc(100% - 15px); text-align: center; display: inline-block;">
+            <br/>
+
+            <div data-netdata="system.cpu"
+                    data-host="https://fore-monitordb.member.design"
+                    data-title="FORE DB CPU Usage/s"
+                    data-decimal-digits="0"
+                    data-chart-library="gauge"
+                    data-width="15%"
+                    data-height="100%"
+                    data-after="-300"
+                    data-points="300"
+                    ></div>
+
+            <div data-netdata="system.ram"
+                    data-dimensions="used|buffers|active|wired"
+                    data-append-options="percentage"
+                    data-common-max="netdata-net-in"
+                    data-decimal-digits="0"
+                    data-host="https://fore-monitordb.member.design"
+                    data-title="FORE DB Used RAM"
+                    data-units="%"
+                    data-easypiechart-max-value="100"
+                    data-chart-library="easypiechart"
+                    data-width="10%"
+                    data-height="100%"
+                    data-after="-360"
+                    data-points="360"
+                    ></div>
+
+            <div data-netdata="system.net"
+                    data-host="https://fore-monitordb.member.design"
+                    data-common-max="traffic"
+                    data-common-min="traffic"
+                    data-title="Network traffic on FORE DB Server"
+                    data-chart-library="dygraph"
+                    data-width="30%"
+                    data-height="100%"
+                    data-after="-300"
+                    ></div>
+
+            <div data-netdata="system.io"
+                    data-host="https://fore-monitordb.member.design"
+                    data-common-max="io"
+                    data-common-min="io"
+                    data-title="I/O on FORE DB Server"
+                    data-chart-library="dygraph"
+                    data-width="30%"
+                    data-height="100%"
+                    data-after="-300"
+                    ></div>        
+        </div> 
+    </div>
+<!-- END UNION CMS -->
+
+
+
 </div>
 </body>
 </html>
