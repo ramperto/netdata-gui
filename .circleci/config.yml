@@ -41,4 +41,5 @@ workflows:
             #untuk string antara v dan members
             # only: /v(.*)\-members/
           branches:
-            ignore: /.*/
+            only: develop
+            # ignore: /.*/
