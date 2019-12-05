@@ -29,3 +29,6 @@ jobs:
       - run:
           name: read test file
           command: cat test.txt
+      - run:
+          name: list file
+          command: ls -al
