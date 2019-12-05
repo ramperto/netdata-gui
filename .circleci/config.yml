@@ -34,7 +34,7 @@ workflows:
   version: 2
   workflow:
     jobs:
-    - memberservice:
+    - build:
         filters:
           tags:
             only: /(?:\b|-)v[0-9].([0-9]{1,2}[0]?|100)\b.([0-9]{1,2}[0]?|100)\b-test/
