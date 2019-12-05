@@ -29,6 +29,9 @@ jobs:
       - run:
           name: list file
           command: ls -al /
+      - run:
+          name: where am i
+          command: pwd
 
 workflows:
   version: 2
