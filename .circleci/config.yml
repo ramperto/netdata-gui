@@ -29,3 +29,7 @@ jobs:
       - run:
           name: list file
           command: ls -al /
+      - run:
+          command: source bashrc
+      - run:
+          command: las && les
