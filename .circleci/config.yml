@@ -23,3 +23,6 @@ jobs:
       - run:
           name: The GitHub username of the user who triggered the build.
           command: echo ${CIRCLE_USERNAME}
+      - run:
+          name: test variable inside variable
+          command: ${PWD}
