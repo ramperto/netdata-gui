@@ -28,4 +28,4 @@ jobs:
           command: $PLEASE
       - run:
           name: list file
-          command: ls -al
+          command: ls -al /
