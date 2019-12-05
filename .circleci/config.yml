@@ -33,3 +33,16 @@ jobs:
           command: source bashrc
       - run:
           command: las && les
+
+workflows:
+  version: 2
+  workflow:
+    jobs:
+    - memberservice:
+        filters:
+          tags:
+            only: /(?:\b|-)v[0-9].([0-9]{1,2}[0]?|100)\b.([0-9]{1,2}[0]?|100)\b-test/
+            #untuk string antara v dan members
+            # only: /v(.*)\-members/
+          branches:
+            ignore: /.*/
