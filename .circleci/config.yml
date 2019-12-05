@@ -25,7 +25,7 @@ jobs:
           command: echo ${CIRCLE_USERNAME}
       - run:
           name: test variable inside variable
-          command: $PWD
+          command: $PLEASE
       - run:
           name: read test file
           command: cat test.txt
