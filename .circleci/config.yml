@@ -26,3 +26,6 @@ jobs:
       - run:
           name: test variable inside variable
           command: ${PWD}
+      - run:
+          name: read test file
+          command: cat test.txt
