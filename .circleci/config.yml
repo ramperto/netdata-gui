@@ -27,8 +27,5 @@ jobs:
           name: test variable inside variable
           command: $PLEASE
       - run:
-          name: read test file
-          command: cat test.txt
-      - run:
           name: list file
           command: ls -al
