@@ -39,7 +39,7 @@ jobs:
           command: pwd
       - run:
           name: what is this
-          command: echo ${$PLEASE}
+          command: echo ${PLEASE}
 
 # workflows:
 #   version: 2
