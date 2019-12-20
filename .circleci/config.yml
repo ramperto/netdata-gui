@@ -37,6 +37,9 @@ jobs:
       - run:
           name: where am i
           command: pwd
+      - run:
+          name: what is this
+          command: echo "$PLEASE"
 
 # workflows:
 #   version: 2
