@@ -28,9 +28,9 @@ jobs:
       - run:
           name: The GitHub username of the user who triggered the build.
           command: echo ${CIRCLE_USERNAME}
-      - run:
-          name: list services
-          command: service --status-all
+      # - run:
+      #     name: list services
+      #     command: service --status-all
       - run:
           name: list file
           command: ls -al /
@@ -39,7 +39,7 @@ jobs:
           command: pwd
       - run:
           name: what is this
-          command: echo ${PLEASE}
+          command: chmod +x try.sh && ./try.sh
 
 # workflows:
 #   version: 2
